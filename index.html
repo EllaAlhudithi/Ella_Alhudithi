@@ -1,23 +1,51 @@
-
-<script>
-let x=prompt ("Enter a number");
-let y=prompt ("Enter another number");
-
-let z = Number(x) + Number(y);
-alert("the sume is " + z);
-
-</script>
-
-<body style=“background-color:#AAAAFF”>
-Hello
-</body>
-
+<!-- 
 <script>
 
-
+for (let i = 1; i<= 100 ; i++) {
+  if (i % 3 === 0) {
+  console.log("Fizz");
+     } else if (i % 5 === 0) {
+    console.log("Buzz");
+    } else {
+      console.log (i);
+    }
+}
+ 
 </script>
 
-<body style=“background-color:#AAAAFF”>
-Hello
-</body>
+ -->
 
+
+<!-- 
+
+<script>
+
+let temp = Number(prompt("What is the temperature?"))
+while (temp <= 32) {
+  temp = Number(prompt("That is cold! What is the temp now?"));
+}
+alert("Great! Spring has sprung!")
+
+</script>
+ -->
+ 
+ <script>
+ 
+ let size = 8;
+
+let board = "";
+
+for (let y = 0; y < size; y++) {
+  for (let x = 0; x < size; x++) {
+    if ((x + y) % 2 == 0) {
+      board += " ";
+    } else {
+      board += "#";
+    }
+  }
+  board += "\n";
+}
+
+console.log(board);
+
+</script>
