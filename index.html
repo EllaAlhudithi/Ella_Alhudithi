@@ -1,70 +1,27 @@
-<!-- 
-<script>
-
-for (let i = 1; i<= 100 ; i++) {
-  if (i % 3 === 0) {
-  console.log("Fizz");
-     } else if (i % 5 === 0) {
-    console.log("Buzz");
-    } else {
-      console.log (i);
-    }
-}
- 
-</script>
- -->
-
-
- -->
-
-
-<!-- 
 
 <script>
 
-let temp = Number(prompt("What is the temperature?"))
-while (temp <= 32) {
-  temp = Number(prompt("That is cold! What is the temp now?"));
-}
-alert("Great! Spring has sprung!")
+let playing=true;
 
+while (playing) {
+  let total=35;
+  
+  while (true) {
+    let number=prompt ("welcome to number guessing game! choose a number between 1 and 100 to win the game. If your guess is wrong, you will be informed that your guess is too high, high, low or too low. Please enter a number");
+    
+    if (number>75) {
+      alert ("Try again! Your guess is too high");
+      } else if (number>50) {
+      alert ("Try again! Your guess is too high");
+ } else if (number>35) {
+      alert ("Try again! Your guess is high");
+        } else if (number=35) {
+      alert ("Your guess is correct");       
+      } else if (number<35) {
+      alert ("Try again! Your guess is low");
+      } else if (number<25) {
+      alert ("Try again! Your guess is too low");
+      
 </script>
- -->
- 
-<!-- 
- <script>
- 
- let size = 8;
 
-let board = "";
 
-for (let y = 0; y < size; y++) {
-  for (let x = 0; x < size; x++) {
-    if ((x + y) % 2 == 0) {
-      board += " ";
-    } else {
-      board += "#";
-    }
-  }
-  board += "\n";
-}
-
-console.log(board);
-
-</script>
- -->
- 
- 
- <script>
-
-for (let i = 1; i<= 100 ; i++) {
-  if (i % 3 === 0) {
-  alert("Fizz");
-     } else if (i % 5 === 0) {
-    alert("Buzz");
-    } else {
-      alert(i);
-    }
-}
- 
-</script>
