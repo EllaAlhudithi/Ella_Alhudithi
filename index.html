@@ -1,27 +1,25 @@
-
 <script>
-
-let playing=true;
-
+var playing=true;
+alert("Helo. Welcome to The Number Guessing Game! Please, choose a number between 1 to 100 to play the game.")
+var max=100;
+var min=1;
 while (playing) {
-  let total=35;
-  
-  while (true) {
-    let number=prompt ("welcome to number guessing game! choose a number between 1 and 100 to win the game. If your guess is wrong, you will be informed that your guess is too high, high, low or too low. Please enter a number");
-    
-    if (number>75) {
-      alert ("Try again! Your guess is too high");
-      } else if (number>50) {
-      alert ("Try again! Your guess is too high");
- } else if (number>35) {
-      alert ("Try again! Your guess is high");
-        } else if (number=35) {
-      alert ("Your guess is correct");       
-      } else if (number<35) {
-      alert ("Try again! Your guess is low");
-      } else if (number<25) {
-      alert ("Try again! Your guess is too low");
-      
-</script>
+  let average=Math.floor((max+min)/2);
+  let guess=prompt("Is your number " + average + "? Please, respond by entering either >, <, or yes.");
+  if (guess === ">") {
+    min = average;
+    } else if (guess === "<") {
+      max = average;
+      } else if (guess === "yes") {
+        alert("WhooHoo! The correct number has been guessed. Do you want to play again? Please, restart the game or click on close!")
+         playing=false;
+     }   
+ }
+</script> 
 
-
+       
+       <!-- 
+ } else if (guess === "no") {
+        alert("Please, select ONLY one of the three options: >, <, or yes to answer the question!)
+        
+ -->
